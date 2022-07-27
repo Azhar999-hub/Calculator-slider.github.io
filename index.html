@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- calculator -->
+    <div class="main mt-2 shadow-lg rounded">
+        <div>
+            <input id="result" class="result my-1 ms-1 p-3 rounded" type="text">
+        </div>
+        <div class="ps-1">
+            <button class="btn btn-primary" onclick="getNumber('1')">1</button>
+            <button class="btn btn-primary" onclick="getNumber('2')">2</button>
+            <button class="btn btn-primary" onclick="getNumber('3')">3</button>
+            <button class=" btn btn-success" onclick="getNumber('+')">+</button>
+        </div>
+        <div class="ps-1">
+            <button class="btn btn-primary" onclick="getNumber('4')">4</button>
+            <button class="btn btn-primary" onclick="getNumber('5')">5</button>
+            <button class="btn btn-primary" onclick="getNumber('6')">6</button>
+            <button class="btn btn-success" onclick="getNumber('-')">-</button>
+        </div>
+        <div class="ps-1">
+            <button class="btn btn-primary" onclick="getNumber('7')">7</button>
+            <button class="btn btn-primary" onclick="getNumber('8')">8</button>
+            <button class="btn btn-primary" onclick="getNumber('9')">9</button>
+            <button class="btn btn-success" onclick="getNumber('*')">*</button>
+        </div>
+        <div class="ps-1">
+
+
+
+            <button class="halfbtn btn btn-success" onclick="getResult()">=</button>
+            <button class="halfbtn btn btn-primary" onclick="getNumber('0')">0</button>
+            <button class="halfbtn btn btn btn-success" onclick="getNumber('/')">/</button>
+        </div>
+
+        <div class="ps-1 mt-1 mb-1">
+            <button  class="clearbtn btn btn-danger" onclick="clearResult()">C</button>
+        </div>
+
+
+    </div>
+
+    <!-- slider -->
+    <div class="slideshow-container mt-4">
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="pic1.jpg" style="width:100%">
+            <div class="text">pic one</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="pic2.jpg" style="width:100%">
+            <div class="text">Pic two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="pic3.jpg" style="width:100%">
+            <div class="text">Pic three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
